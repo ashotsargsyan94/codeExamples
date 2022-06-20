@@ -1,0 +1,155 @@
+#photo-editor .nav-tabs {
+	margin: 10px -1px 0;
+	border: 0;
+}
+
+#photo-editor .nav-tabs > li {
+	flex: 1;
+	float: none;
+	padding: 0 1px;
+	margin: 0;
+}
+
+#photo-editor .nav-tabs > li > * {
+	display: block;
+	width: 100%;
+	background: #4f4f4f;
+	color: #fff;
+	margin: 0;
+	text-align: center;
+	padding: 10px 15px;
+	border: 0 !important;
+	border-radius: 0;
+}
+
+#photo-editor .nav-tabs > li.active > a {
+	background: #3f3f3f;
+	color: var(--secondary-color);
+}
+
+#photo-editor .crprBtns button {
+	flex: 1;
+	border-radius: 0;
+}
+
+#photo-editor .crprBtns {
+	margin-bottom: 0 !important;
+}
+
+#photo-editor #brightnessTab .crprBtns {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0px;
+}
+
+#photo-editor #brightnessTab label {
+	margin: 0 auto;
+}
+
+#photo-editor #brightnessTab .light_btns_group {
+	display: flex;
+	justify-content: center;
+	flex-flow: wrap;
+	margin: 12px 0 8px;
+	width: 50%;
+}
+
+#photo-editor #brightnessTab .light_btns_group small{
+	width: 100%;
+}
+
+#photo-editor #filterSlider {
+	margin-top: 10px;
+}
+
+#photo-editor #filterSlider .ico {
+	width: 60px;
+	min-width: 60px;
+	height: 60px;
+	border-radius: 0;
+}
+
+#filterSlider button.inner {
+	border: none;
+	padding: 0;
+	background: transparent;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#photo-editor {
+	visibility: hidden;
+	display: flex;
+}
+#photo-editor.popup {
+	background: rgba(0, 0, 0, 0.4);
+}
+#photo-editor .inside {
+	display: flex;
+	padding: 0 20px;
+	width: 100%;
+}
+#photo-editor .image-container {
+	width: 100%;
+	max-height: 75vh;
+	overflow: hidden;
+	max-width: 100%;
+	display: block;
+}
+#photo-editor .image-container h3{
+	position: absolute;
+	background-color: #2f5465;
+	color: #fff;
+	z-index: 100;
+}
+canvas#image-canvas {
+	max-width: 100%;
+	display: block;
+}
+#photo-editor .cropper-container {
+	max-width: 100%;
+}
+#photo-editor .cropper-canvas {
+	margin: 0 auto;
+}
+#photo-editor .cropper-canvas.zoomed {
+	margin: 0;
+}
+#photo-editor #close-cropper {
+	top: 4px;
+	right: 4px;
+	width: 16px;
+	height: 16px;
+	font-size: 16px;
+}
+#photo-editor .caman-filter {
+	border-radius: 4px;
+}
+#photo-editor .nav-tabs {
+	max-width: 600px;
+	align-items: center;
+	margin: 10px auto 1px;
+}
+@media screen and (max-width: 767px) {
+	#photo-editor .nav-tabs {
+		margin: 10px -1px 0;
+	}
+	#photo-editor .inside {
+		padding: 0px;
+	}
+	#photo-editor ._inner {
+		width: 100%;
+		overflow: hidden;
+	}
+	#photo-editor #close-cropper {
+		top: 2px;
+		right: 2px;
+		width: 26px;
+		height: 26px;
+		font-size: 26px;
+	}
+
+	div#brightnessTab {
+		margin: 0 15px;
+	}
+}
